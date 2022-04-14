@@ -1,21 +1,20 @@
 
 const letterPositions = sentence => {
   const results = {};
-
+  
   for(let x = 0; x < sentence.length; x++) {
+    // for(const x of sentence) {
     if(sentence[x] !== " ") {
     if(results[sentence[x]]) {
     results[sentence[x]].push(x)
   } else {
     results[sentence[x]] = [x] 
-   }
-  // console.log(x);
-  // console.log(sentence[x])
-  }
+   } 
+ }
 }
 return results;
 }
-const results1 = letterPositions("Lighthouse in the house")
+const results1 = letterPositions("hello in the house")
 console.log(results1)
 
 const eqArrays = (array1, array2) => {
@@ -39,5 +38,5 @@ const assertArraysEqual = (array1st, array2nd) => {
   }
 };
 
-assertArraysEqual(letterPositions("hello").e,[1])
-console.log(letterPositions("hello"))
+// assertArraysEqual(letterPositions("hello").e,[1])
+// console.log(letterPositions("hello"))

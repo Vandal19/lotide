@@ -1,4 +1,4 @@
-// Implement a function that takes return a slice of the array with elements taken from the beginning
+// Implement a function that takes return a slice of the array with elements taken from the beginning until it stops
 const takeUntil = (array, callback) => {
   const results = [];
   for (let item of array) {
